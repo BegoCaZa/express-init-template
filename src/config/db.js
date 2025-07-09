@@ -1,3 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGO_URL)
+console.log("Conectado a BD");
+mongoose.connect(process.env.MONGO_URL);
