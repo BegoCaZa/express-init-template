@@ -14,4 +14,10 @@ const create = async (req, res) => {
   res.status(201).json(newStudent);
 };
 
+// const deleteById = (req, res) => {
+//   const { studentID } = req.params;
+//   const foundStudent = Student.find({ studentID });
+//   console.log(foundStudent);
+// };
+
 module.exports = { getAll, create };

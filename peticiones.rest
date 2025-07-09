@@ -7,8 +7,9 @@ POST {{HOST}}/api/students
 Content-Type: application/json
 
 {
-    "name":"Julia",
-    "surname": "Sánchez",
+    "name":"Pepe",
+    "surname": "Velázquez",
     "phone": "7654321",
-    "email":"juliaG@gmail.com"
+    "email":"pepeG@gmail.com"
 }
+
