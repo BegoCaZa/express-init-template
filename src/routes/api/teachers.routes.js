@@ -1,5 +1,8 @@
 const router = require('express').Router();
 
-// Define your routes here
+const TeachersController = require('../../controllers/teachers.controller');
+
+router.get('/', TeachersController.getAll);
+router.get('/teacherID', TeachersController.getById);
 
 module.exports = router;
