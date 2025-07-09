@@ -1,11 +1,17 @@
-const getAll = (req, res) => {
-  console.log('prueba');
-  res.json('Todo bien');
+const Student = require("../config/models/students.model");
+
+const getAll = async (req, res) => {
+  const students = await Student.find();
+
+  res.json(students);
 };
 
-const create = (req, res) => {
-  res.status(201).json('Se crea el nuevo estudiante');
-  console.log(req.body.name);
+const create = async (req, res) => {
+  //req.body-name,surname,phone,email
+
+  const newStudent = await Student.create(req.body);
+
+  res.status(201).json(newStudent);
 };
 
 module.exports = { getAll, create };
