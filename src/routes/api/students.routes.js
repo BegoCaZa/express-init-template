@@ -1,6 +1,8 @@
-const router = require("express").Router();
-const StudentsController = require("../../controllers/students.controller");
+const router = require('express').Router();
+const StudentsController = require('../../controllers/students.controller');
 
-router.get("/", StudentsController.getAll);
+// /api/students
+router.get('/', StudentsController.getAll);
+router.post('/', StudentsController.create);
 
 module.exports = router;
