@@ -16,7 +16,22 @@ Response:
 -Status: 201
 -Body: El objeto con el nuevo estudiante creado
 
+## ACTUALIZAR UN ESTUDIANTE
+
+-Method: PUT
+-URL: /api/students/<StudentID>
+-Headers: XXXX
+-Body: name, surname, phone, email
+
+Response:
+-Status: 200
+-Body: Un array con el estudiante actualizado
+
+######
+
 ## TEACHERS
+
+######
 
 ## Recuperar los datos de todos los profesores
 
@@ -39,3 +54,10 @@ Response:
 Response:
 -Status: 200
 -Body: El objeto con el profesor buscado
+
+## Crear un profesor
+
+-Method: POST
+-URL: /api/teachers
+-Headers: XXXX
+-Body:

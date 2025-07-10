@@ -13,6 +13,15 @@ Content-Type: application/json
     "email":"pepeG@gmail.com"
 }
 
+
+###
+PUT {{HOST}}/api/students/686e5bd14d872bc3a2c05a85
+Content-Type: application/json
+
+{
+    "name":"Julieta"
+}
+
 ###
 POST {{HOST}}/api/teachers
 Content-Type: application/json
@@ -21,5 +30,5 @@ Content-Type: application/json
     "first_name":"Ana",
     "last_name": "García",
     "age": 32,
-    "available": true,
+    "available": true
 }
