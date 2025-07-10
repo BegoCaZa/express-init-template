@@ -13,3 +13,13 @@ Content-Type: application/json
     "email":"pepeG@gmail.com"
 }
 
+###
+POST {{HOST}}/api/teachers
+Content-Type: application/json
+
+{
+    "first_name":"Ana",
+    "last_name": "García",
+    "age": 32,
+    "available": true,
+}
