@@ -13,6 +13,9 @@ Content-Type: application/json
     "email":"pepeG@gmail.com"
 }
 
+###
+DELETE {{HOST}}/api/students/686e5bb04d872bc3a2c05a83
+
 
 ###
 PUT {{HOST}}/api/students/686e5bd14d872bc3a2c05a85

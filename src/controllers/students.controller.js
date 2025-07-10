@@ -25,10 +25,10 @@ const edit = async (req, res) => {
   res.json(updatedStudent);
 };
 
-// const deleteById = (req, res) => {
-//   const { studentID } = req.params;
-//   const foundStudent = Student.find({ studentID });
-//   console.log(foundStudent);
-// };
+const remove = async (req, res) => {
+  const { studentID } = req.params;
+  const deletedStudent = await Student.findByIdAndDelete(studentID);
+  res.json(deletedStudent);
+};
 
-module.exports = { getAll, create, edit };
+module.exports = { getAll, create, edit, remove };
